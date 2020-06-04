@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Form from './Form'
+import KeyBoard from './KeyBoard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3><span style={{ color: '#3973ba' }}>React</span> + <span style={{ color: '#8d6fc3' }}>Redux</span> On Screen Keyboard</h3>
+      <p>Need to click twice to change the input focus (need to handle it later)</p>
+      <Form/>
+      <KeyBoard/>
     </div>
   );
 }
